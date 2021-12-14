@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Budget du mois</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="content">
+    <div id="expenditure">
+        <h2>Dépenses fixes</h2>
+            <input type="text" placeholder="Loyer et charges" id="rental">
+            <input type="text" placeholder="remboursements de crédits" id="credit">
+            <input type="text" placeholder="eau/électricité/gaz" id="water">
+            <input type="text" placeholder="téléphone - internet" id="phone">
+            <input type="text" placeholder="assurance habitation" id="homeInsurance">
+            <input type="text" placeholder="assurance véhicules" id="carInsurance">
+            <input type="text" placeholder="mutuelle santé" id="mutualHealth">
+            <input type="text" placeholder="frais de garde" id="child">
+            <input type="text" placeholder="impôts sur le revenus" id="incomeTaxes">
+            <input type="text" placeholder="impôts locaux" id="localTaxes">
+        <h2>Les dépenses courantes</h2>
+            <input type="text" placeholder="courses" id="food">
+            <input type="text" placeholder="essences / frais de transport en commun" id="gasoline">
+            <input type="text" placeholder="activités sportive et culturelles" id="activity">
+            <input type="text" placeholder="Soins vétérinaire" id="animalsHealth">
+        <h2>Dépenses occasionnelles</h2>
+                <input type="text" placeholder="sortie" id="outing">
+                <input type="text" placeholder="autres" id="others">
+    </div>
+
+    <div id="take">
+        <h2>Les entrées d'argent</h2>
+            <input type="text" placeholder="Salaire" id="salary">
+            <input type="text" placeholder="Les aides (allocations diverses)" id="aid">
+            <input type="text" placeholder="Les rentes" id="unearnedIncome">
+            <input type="text" placeholder="Autre" id="others2">
+    </div>
+
+    <div id="sapes">
+            <h2>Epargne</h2>
+            <input type="text" id="thrift">
+    </div>
+
+    <div id="results">
+        <button id="resultButton">Résultat</button>
+        <p>Etat de survie de votre compte : <span id="result"></span></p>
+        <p id="phrase"></p>
+    </div>
+
+    <button type="reset" id="reset">Budget vierge</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
