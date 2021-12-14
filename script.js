@@ -17,24 +17,24 @@ buttonResult.addEventListener('click', function () {
     let sapesResult = 0;
 
     //a for loop to calculate each result of div
+    //calcul the expenditures
     for (let expend of expenditures) {
         resultExpend += (parseFloat(expend.value));
         console.log(expend.value);
     }
-
+    //calcul the take
     for (let taking of take) {
         resultTake += (parseFloat(taking.value));
     }
-
+    //calcul the sapes
     for (let sapping of sapes) {
         sapesResult += (parseFloat(sapping.value));
     }
 
+    //calcul the final result and import in the HTML
     resultTotal = resultTake  - resultExpend- sapesResult;
-    console.log(resultTotal);
     result.innerHTML = resultTotal;
-    console.log(resultTake, resultExpend, sapesResult);
-
+    //condition for look the phrase
     if (resultTotal > 0) {
         phrase.innerHTML = 'Félicitations ! Vous pouvez vous acheter un jeu, ou une nouvelle voiture !';
         phrase.style.color = "darkgreen";
@@ -44,6 +44,8 @@ buttonResult.addEventListener('click', function () {
         phrase.style.color = 'red';
         phrase.style.fontWeight = 'bold';
     }
+})
 
-
+buttonReset.addEventListener('click', function () {
+    window.location.reload();
 })
