@@ -8,9 +8,9 @@ html {
     font-size: 65.5%;
 }
 
-h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+h2  {
+    color: #da0d0d;
+    text-align: center;
 }
 
 #content {
@@ -18,28 +18,63 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
 }
 
-#expenditure, #take, #sapes {
+body {
+    background-color: #bdb7b7;
+    font-family: "Arial", sans-serif;
+}
+
+#expenditure, #global {
     border: black 3px solid;
-    width: 30%;
-    border-radius: 3px;
-    padding: 0.8rem;
+    border-radius: 10px;
 }
 
 #expenditure {
-    width: 30%;
-}
-
-#take {
-    width: 30%;
-}
-
-#result {
     display: flex;
-    justify-content: right;
-    align-items: start;
-    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40vw;
+    margin-top: 1.5rem;
+    box-shadow: whitesmoke 5px 5px 5px;
+}
+
+#div1, #div2 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+#global {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    padding: 0.5rem;
+    box-shadow: whitesmoke 5px 5px 5px;
+}
+
+#globalResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 12vw;
+}
+
+#globalResult {
+    margin-top: 1rem;
+}
+
+#resultButton, #reset {
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+#statut {
+    font-weight: bold;
     font-size: 1.5rem;
 }

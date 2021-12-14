@@ -11,92 +11,99 @@
 
 <div id="content">
     <div id="expenditure">
-        <h2>Dépenses fixes</h2>
 
-            <label for="rental">Loyer et charges</label> <br>
-                <input type="text" value="0" id="rental">
-        <br>
-            <label for="credit">Remboursements de crédits</label> <br>
-                <input type="text" value="0" id="credit">
-        <br>
-            <label for="water">Eau/électricité/gaz</label> <br>
-                <input type="text" value="0" id="water">
-        <br>
-            <label for="phone">Téléphone - internet</label> <br>
-                <input type="text" value="0" id="phone">
-        <br>
-            <label for="homeInsurance">Assurance habitation</label> <br>
-                <input type="text" value="0" id="homeInsurance">
-        <br>
-            <label for="carInsurance">Assurance véhicules</label> <br>
-                <input type="text" value="0" id="carInsurance">
-        <br>
-            <label for="mutualHealth">Mutuelle santé</label> <br>
-                <input type="text" value="0" id="mutualHealth">
-        <br>
-            <label for="child">Frais de garde</label> <br>
-                <input type="text" value="0" id="child">
-        <br>
-            <label for="incomeTaxes">Impôts sur le revenus</label> <br>
-                <input type="text" value="0" id="incomeTaxes">
-        <br>
-            <label for="localTaxes">Impôts locaux</label> <br>
-                <input type="text" value="0" id="localTaxes">
-        <br>
+        <div id="div1">
+            <h2>Dépenses fixes</h2>
+            <label for="rental">Loyer et charges</label>
+            <input type="text" value="0" id="rental">
+
+            <label for="credit">Remboursements de crédits</label>
+            <input type="text" value="0" id="credit">
+
+            <label for="water">Eau/électricité/gaz</label>
+            <input type="text" value="0" id="water">
+
+            <label for="phone">Téléphone - internet</label>
+            <input type="text" value="0" id="phone">
+
+            <label for="homeInsurance">Assurance habitation</label>
+            <input type="text" value="0" id="homeInsurance">
+
+            <label for="carInsurance">Assurance véhicules</label>
+            <input type="text" value="0" id="carInsurance">
+
+            <label for="mutualHealth">Mutuelle santé</label>
+            <input type="text" value="0" id="mutualHealth">
+
+            <label for="child">Frais de garde</label>
+            <input type="text" value="0" id="child">
+
+            <label for="incomeTaxes">Impôts sur le revenus</label>
+            <input type="text" value="0" id="incomeTaxes">
+
+            <label for="localTaxes">Impôts locaux</label>
+            <input type="text" value="0" id="localTaxes">
+        </div>
+
+        <div id="div2">
             <h2>Les dépenses courantes</h2>
-
-            <label for="food">Courses</label> <br>
+                <label for="food">Courses</label>
                 <input type="text" value="0" id="food">
-        <br>
-            <label for="gasoline">Essences / frais de transport en commun</label> <br>
+
+                <label for="gasoline">Essences / frais de transport en commun</label>
                 <input type="text" value="0" id="gasoline">
-        <br>
-            <label for="activity">Activités sportives et culturelles</label> <br>
+
+                <label for="activity">Activités sportives et culturelles</label>
                 <input type="text" value="0" id="activity">
-        <br>
-            <label for="animalsHealth">Soins vétérinaire</label> <br>
-                <input type="text" value="0" id="animalsHealth">
+
+                <label for="animalsHealth">Soins vétérinaire</label>
+                <input type="text" value="0" id="animalsHealth"> <br>
 
             <h2>Dépenses occasionnelles</h2>
+                <label for="outing">Sortie</label>
+                <input type="text" value="0" id="outing">
+                <label for="others">Autres</label>
+                <input type="text" value="0" id="others">
+        </div>
 
-            <label for="outing">Sortie</label> <br>
-                    <input type="text" value="0" id="outing"> <br>
-            <label for="others">Autres</label> <br>
-                    <input type="text" value="0" id="others">
     </div>
 
-    <div id="take">
+    <div id="global">
+        <div id="take">
 
-        <h2>Les entrées d'argent</h2>
+            <h2>Les entrées d'argent</h2>
 
-        <label for="salary">Salaire</label> <br>
-            <input type="text" value="0" id="salary">
-        <br>
-        <label for="aid">Allocations diverses</label> <br>
-            <input type="text" value="0" id="aid">
-        <br>
-        <label for="unearnedIncome">Les rentes</label> <br>
+            <label for="salary">Salaire</label> <br>
+            <input type="text" value="0" id="salary"> <br>
+
+            <label for="aid">Allocations diverses</label> <br>
+            <input type="text" value="0" id="aid"> <br>
+
+            <label for="unearnedIncome">Les rentes</label> <br>
             <input type="text" value="0" id="unearnedIncome"> <br>
-        <label for="others2">Autre</label> <br>
+            <label for="others2">Autre</label><br>
             <input type="text" value="0" id="others2">
-    </div>
+        </div>
 
-    <div id="sapes">
+        <div id="sapes">
 
             <h2>Epargne</h2>
 
-        <label for="thrift"></label> <br>
+            <label for="thrift"></label> <br>
             <input type="text" id="thrift">
+        </div>
     </div>
 
-    <div id="results">
-        <button id="resultButton">Résultat</button>
-        <p>Etat de survie de votre compte : <span id="result"></span></p>
-        <p id="phrase"></p>
-    </div>
+    <div id="globalResult">
+        <div id="results">
+            <button id="resultButton"> Résultat </button>
+            <button type="reset" id="reset">Budget vierge</button>
+            <p id="statut">Etat de survie de votre compte : <span id="result"></span></p>
+            <p id="phrase"></p>
+        </div>
 
-    <button type="reset" id="reset">Budget vierge</button>
 
+</div>
 </div>
 
 <script src="script.js"></script>
